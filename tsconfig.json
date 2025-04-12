@@ -1,12 +1,6 @@
 {
-  "extends": "tsconfigs/nodejs-module",
+  "extends": "@1stg/tsconfig/node16",
   "compilerOptions": {
-    "outDir": "lib"
-  },
-  "include": [
-    ".eslintrc.js",
-    "commitlint.config.js",
-    "src/**/*.ts"
-  ]
+    "rootDir": "."
+  }
 }
-
