@@ -16,7 +16,7 @@
   "module": "./lib/index.esm.mjs",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
+      "types": "./lib/index.d.ts",
       "import": "./lib/index.esm.mjs",
       "module-sync": "./lib/index.esm.mjs",
       "require": "./lib/index.js"
