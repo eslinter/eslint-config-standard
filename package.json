@@ -1,6 +1,6 @@
 {
   "name": "@eslinter/eslint-config-standard",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "commonjs",
   "description": "JavaScript Standard Style - ESLint Shareable Config",
   "repository": "git+https://github.com/eslinter/eslint-config-standard.git",
