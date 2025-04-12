@@ -1,10 +1,10 @@
 import { ESLint } from 'eslint'
 
-import config from '@eslinter/eslint-config-standard'
+import * as baseConfig from '@eslinter/eslint-config-standard'
 
 const eslint = new ESLint({
   overrideConfigFile: true,
-  baseConfig: config,
+  baseConfig,
 })
 
 test('load config in eslint to validate all rule syntax is correct', async () => {

@@ -1,7 +1,7 @@
 {
   "name": "@eslinter/eslint-config-standard",
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "description": "JavaScript Standard Style - ESLint Shareable Config",
   "repository": "git+https://github.com/eslinter/eslint-config-standard.git",
   "author": "JounQin <admin@1stg.me> (https://www.1stG.me)",
@@ -11,25 +11,23 @@
   "engines": {
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
-  "main": "./lib/index.cjs",
-  "types": "./index.d.cts",
-  "module": "./lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "module": "./lib/index.esm.mjs",
   "exports": {
-    "import": {
+    ".": {
       "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
+      "import": "./lib/index.esm.mjs",
+      "module-sync": "./lib/index.esm.mjs",
+      "require": "./lib/index.js"
     },
-    "module-sync": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
+    "./legacy": {
+      "types": "./lib/legacy.d.ts",
+      "default": "./lib/legacy.js"
     },
-    "require": {
-      "types": "./index.d.cts",
-      "default": "./lib/index.cjs"
-    }
+    "./package.json": "./package.json"
   },
   "files": [
-    "index.d.cts",
     "lib",
     "!**/*.tsbuildinfo"
   ],
@@ -61,8 +59,8 @@
   ],
   "scripts": {
     "build": "run-p 'build:*'",
-    "build:r": "r -f cjs",
-    "build:tsc": "tsc -b tsconfig.lib.json",
+    "build:r": "r -f esm",
+    "build:tsc": "tsc -b src",
     "clean": "git clean .type-coverage coverage lib -X --force",
     "format": "prettier --write .",
     "lint": "run-p 'lint:*'",
