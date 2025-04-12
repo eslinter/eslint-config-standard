@@ -1,5 +1,11 @@
 # @eslinter/eslint-config-standard
 
+## 0.1.1
+
+### Patch Changes
+
+- [`21f77f4`](https://github.com/eslinter/eslint-config-standard/commit/21f77f4cf0e975194d6dbfc0c4a78b215ebedbeb) Thanks [@JounQin](https://github.com/JounQin)! - fix: should run build before releasing
+
 ## 0.1.0
 
 ### Minor Changes
