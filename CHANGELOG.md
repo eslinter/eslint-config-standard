@@ -1,0 +1,9 @@
+# @eslinter/eslint-config-standard
+
+## 0.1.0
+
+### Minor Changes
+
+- [#2](https://github.com/eslinter/eslint-config-standard/pull/2) [`8b580fb`](https://github.com/eslinter/eslint-config-standard/commit/8b580fbb19b12ecad3792b71a4301debad83250f) Thanks [@JounQin](https://github.com/JounQin)! - feat: add legacy eslint config support back
+
+- [#1](https://github.com/eslinter/eslint-config-standard/pull/1) [`ae748aa`](https://github.com/eslinter/eslint-config-standard/commit/ae748aa43c4da6709f30aa9949d7d4eb730a08a3) Thanks [@JounQin](https://github.com/JounQin)! - refactor: migrate `eslint-plugin-import` to [`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x)
