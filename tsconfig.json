@@ -1,14 +1,6 @@
 {
-  "extends": "tsconfigs/nodejs-module",
+  "extends": "@1stg/tsconfig/node16",
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "outDir": "lib",
-    "skipLibCheck": true
-  },
-  "include": [
-    ".eslintrc.js",
-    "commitlint.config.js",
-    "src/**/*.ts"
-  ]
+    "rootDir": "."
+  }
 }

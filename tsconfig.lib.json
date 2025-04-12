@@ -1,0 +1,7 @@
+{
+  "extends": ".",
+  "compilerOptions": {
+    "outDir": "lib"
+  },
+  "include": ["index.ts", "shim.d.ts"]
+}
