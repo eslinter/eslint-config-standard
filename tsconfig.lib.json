@@ -1,7 +1,6 @@
 {
-  "extends": ".",
+  "extends": "@1stg/tsconfig/node",
   "compilerOptions": {
-    "outDir": "lib"
-  },
-  "include": ["index.ts", "shim.d.ts"]
+    "rootDir": "."
+  }
 }

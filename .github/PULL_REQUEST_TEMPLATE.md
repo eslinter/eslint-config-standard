@@ -4,7 +4,7 @@
 
   If the rule has been accepted and you want to send a PR, please send it
   to: https://github.com/standard/standard. Add the rule to the
-  'index.ts' file, in the "rules" field. This is where rules live
-  until a new major version of standard is released, at which point all
-  new rules and rule changes are moved into `@eslinter/eslint-config-standard`.
+  'src/rules.ts' file. This is where rules live until a new major version
+  of standard is released, at which point all new rules and rule changes
+  are moved into `@eslinter/eslint-config-standard`.
 -->

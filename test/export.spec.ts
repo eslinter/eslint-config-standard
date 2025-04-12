@@ -1,12 +1,12 @@
 import pluginImportX, { createNodeResolver } from 'eslint-plugin-import-x'
-import type { NewResolverResolve } from 'eslint-plugin-import-x/types'
 import pluginN from 'eslint-plugin-n'
 import pluginPromise from 'eslint-plugin-promise'
 import globals from 'globals'
 
-import actual from '@eslinter/eslint-config-standard'
+import * as main from '@eslinter/eslint-config-standard'
+import * as legacy from '@eslinter/eslint-config-standard/legacy'
 
-test('export equality', () => {
+test('main export equality', () => {
   const expected = {
     languageOptions: {
       ecmaVersion: 'latest',
@@ -35,7 +35,9 @@ test('export equality', () => {
       'import-x/resolver-next': [
         {
           ...createNodeResolver(),
-          resolve: expect.any(Function) as NewResolverResolve,
+          resolve: expect.any(Function) as ReturnType<
+            typeof createNodeResolver
+          >,
         },
       ],
     },
@@ -344,5 +346,9 @@ test('export equality', () => {
     },
   }
 
-  expect(actual).toMatchObject(expected)
+  expect(main).toMatchObject(expected)
+})
+
+test('legacy export equality', () => {
+  expect(legacy).toMatchSnapshot()
 })

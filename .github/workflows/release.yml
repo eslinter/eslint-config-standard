@@ -35,7 +35,7 @@ jobs:
         run: yarn --immutable
 
       - name: Create Release Pull Request or Publish to npm
-        uses: changesets/action@e9cc34b4d1212131d8d7a5450b499aea68e41abd # v1
+        uses: changesets/action@06245a4e0a36c064a573d4150030f5ec548e4fcc # v1
         with:
           publish: yarn release
           version: yarn changeset version
