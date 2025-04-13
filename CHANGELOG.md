@@ -1,5 +1,11 @@
 # @eslinter/eslint-config-standard
 
+## 0.1.2
+
+### Patch Changes
+
+- [#6](https://github.com/eslinter/eslint-config-standard/pull/6) [`737b818`](https://github.com/eslinter/eslint-config-standard/commit/737b8187953793d035e142b8ccd86b93271a443c) Thanks [@JounQin](https://github.com/JounQin)! - docs: add legacy eslintrc config usage
+
 ## 0.1.1
 
 ### Patch Changes

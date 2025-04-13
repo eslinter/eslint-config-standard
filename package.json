@@ -1,6 +1,6 @@
 {
   "name": "@eslinter/eslint-config-standard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "commonjs",
   "description": "Actively maintained fork of `eslint-config-standard`: ESLint Config for JavaScript Standard Style",
   "repository": "git+https://github.com/eslinter/eslint-config-standard.git",
