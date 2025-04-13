@@ -13,6 +13,21 @@
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![changesets](https://img.shields.io/badge/maintained%20with-changesets-176de3.svg)](https://github.com/changesets/changesets)
 
+Actively maintained fork of `eslint-config-standard`: ESLint Config for JavaScript Standard Style
+
+## TOC <!-- omit in toc -->
+
+- [The ESLint config of JavaScript Standard Style](#the-eslint-config-of-javascript-standard-style)
+- [Usage](#usage)
+  - [Flat config](#flat-config)
+  - [Legacy ESLintrc config](#legacy-eslintrc-config)
+- [Learn more](#learn-more)
+- [Sponsors and Backers](#sponsors-and-backers)
+  - [Sponsors](#sponsors)
+  - [Backers](#backers)
+- [Changelog](#changelog)
+- [License](#license)
+
 ## The ESLint config of [JavaScript Standard Style][standardjs]
 
 [![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)][standardjs]
@@ -21,7 +36,7 @@ This module is for advanced users. You probably want to use [`standard`][standar
 
 ## Usage
 
-This package exports [a flat ESLint configuration](https://eslint.org/docs/latest/use/configure/configuration-files-new).
+This package exports [a flat ESLint configuration](https://eslint.org/docs/latest/use/configure/configuration-files-new) on the main `@eslinter/eslint-config-standard` entry, and also exports [a legacy ESLintrc configuration](https://eslint.org/docs/latest/use/configure/configuration-files-deprecated) on the `@eslinter/eslint-config-standard/legacy` entry.
 
 ```bash
 # npm
@@ -37,6 +52,8 @@ pnpm add -D eslint @eslinter/eslint-config-standard
 bun add -D eslint @eslinter/eslint-config-standard
 ```
 
+### Flat config
+
 Example `eslint.config.js`:
 
 ```js
@@ -50,20 +67,37 @@ export default [
 ]
 ```
 
+### Legacy ESLintrc config
+
+Example `.eslintrc.json`:
+
+```jsonc
+{
+  "extends": "@eslinter/eslint-config-standard/legacy",
+  "overrides": [
+    {
+      // your overrides here
+    },
+  ],
+}
+```
+
 ## Learn more
 
 For the full listing of rules, editor plugins, FAQs, and more, visit the main
 [JavaScript Standard Style repo][standardjs].
 
-[![Sponsors](https://raw.githubusercontent.com/1stG/static/master/sponsors.svg)](https://github.com/sponsors/JounQin)
+## Sponsors and Backers
 
-## Sponsors
+[![Sponsors and Backers](https://raw.githubusercontent.com/1stG/static/master/sponsors.svg)](https://github.com/sponsors/JounQin)
+
+### Sponsors
 
 | 1stG                                                                                                                   | RxTS                                                                                                                   | UnTS                                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [![1stG Open Collective sponsors](https://opencollective.com/1stG/organizations.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective sponsors](https://opencollective.com/rxts/organizations.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective sponsors](https://opencollective.com/unts/organizations.svg)](https://opencollective.com/unts) |
 
-## Backers
+### Backers
 
 | 1stG                                                                                                                | RxTS                                                                                                                | UnTS                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
