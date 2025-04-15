@@ -4,7 +4,7 @@ import { type Linter } from 'eslint'
 
 // @ts-expect-error missing type
 import pluginN from 'eslint-plugin-n'
-import pluginImportX from 'eslint-plugin-import-x'
+import * as pluginImportX from 'eslint-plugin-import-x'
 // @ts-expect-error missing type
 import pluginPromise from 'eslint-plugin-promise'
 import globals from 'globals'
