@@ -99,7 +99,7 @@
     "size-limit-preset-node-lib": "^0.3.0",
     "type-coverage": "^2.29.7",
     "typescript": "^5.8.3",
-    "vitest": "^3.1.1",
+    "vitest": "^4.0.0",
     "yarn-berry-deduplicate": "^6.1.1"
   },
   "resolutions": {
